@@ -1,0 +1,12 @@
+<center><h1>Pasar Karat MAGIC</h1></center>
+<p><h2><u>Show All Posts</u>:</h2></p>
+<hr>
+
+<% @all_list.each do |l| %>
+  Category: <%= l.category_id %><br>
+  Title:    <%= l.title %><br>
+  Name:     <%= l.user_name %><br>
+  Email:    <%= l.email %><p><hr>
+<% end %>
+
+<p><input type="button" onclick="history.back();" value="Back">
