@@ -11,7 +11,7 @@ post '/aunty' do
 end
 
 
-get '/posts/new/' do
+get '/posts/new' do
   @categories = Category.all
   erb :add_new_post
 end

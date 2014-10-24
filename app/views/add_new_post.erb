@@ -8,7 +8,7 @@
 
   Categories: <select name="categories"><br>
   <% @categories.each do |category| %>
-   <%= <option value="category.id">category.name</option> %>
+    <option value="<%= category.id %>"><%= category.name %></option>
   <% end %>
   </select><p>
 
